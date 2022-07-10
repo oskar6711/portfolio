@@ -1,0 +1,44 @@
+#contact {
+    background: rgba(0, 0, 0, 0.521);
+    backdrop-filter: blur(15px);
+    padding-bottom: 2rem;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    resize: none;
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1024px) {
+    input, textarea {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section > h2 {
+        font-size: 4rem;
+    }
+    input, textarea {
+        width: 75%;
+    }
+}

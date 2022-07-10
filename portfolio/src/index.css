@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: rgb(0, 0, 0);
+    --bg-color-v: linear-gradient(rgb(46, 0, 0), rgb(65, 0, 0), rgb(59, 0, 0));
+    --primary-color: red;
+    --secondary-color: rgb(255, 255, 255);
+    --text-white: white;
+
+    --transition: all 500ms ease;
+
+    --container-width-sm: 90%;
+    --contianer-width-md: 85%;
+    --container-width-lg: 75%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+    background: linear-gradient(to right, pink, rgb(0, 101, 196));
+    /* background-image: url('./assets/binding-dark.png'); */
+    line-height: 1.7;
+    font-size: 3rem;
+}
+
+section {
+    margin-top: 8rem;
+}
+
+section > h2 {
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+.btn {
+    width: max-content;
+    padding: 0.75rem 2rem;
+    border-radius: 0.7rem;
+    transition: var(--transition);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn__transparent {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn__red {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn__red:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn__white {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn__white:hover, .btn__transparent:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color)
+}
+
+a {
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.line {
+    height: 0%;
+    border: 1px solid var(--primary-color);
+}
+
+.red {
+    color: var(--primary-color);
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+    .container {
+        width: var(--container-width-md);
+    }
+    section {
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm)
+    }
+    section {
+        margin-top: 8rem;
+    }
+}

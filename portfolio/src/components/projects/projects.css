@@ -1,0 +1,91 @@
+.projects__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    width: 45%;
+}
+
+.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.container.projects__container.swiper-backface-hidden {
+    padding-bottom: 6rem;
+}
+
+.swiper-button-prev::after {
+    color: var(--secondary-color);
+}
+
+.swiper-button-next::after {
+    color: var(--secondary-color);
+}
+
+.project {
+    background-image: url('../../assets/argyle.png');
+    background-color: rgba(255, 0, 0, 0.527);
+    border-radius: 2rem 2rem 2rem 2rem;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+
+}
+
+.project-image__container {
+    width: 20rem;
+    height: 20rem;
+}
+
+.project-image__container svg {
+    margin-top: 1rem;
+    font-size: 15rem;
+}
+
+.project-text {
+    height: 10rem;
+}
+
+.project-text h4 {
+    font-size: 2rem;
+}
+
+.project-text small {
+    font-size: 1rem;
+}
+
+
+.project-buttons {
+    font-size: 1.5rem;
+    width: 100%;
+    background: var(--secondary-color);
+    border-radius: 0 0 2rem 2rem;
+    transition: var(--transition);
+}
+
+.project-buttons:hover {
+    background: var(--bg-color);
+
+}
+
+.btn__projects {
+    width: 100;
+    color: var(--primary-color);
+}
+
+.btn__projects:hover {
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .projects__container {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .projects__container {
+        width: 80%;
+    }
+}
+
+

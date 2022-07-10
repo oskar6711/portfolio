@@ -1,0 +1,36 @@
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.footer__home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border: 1px solid var(--secondary-color);
+    padding: 5px;
+}
+
+.footer__home:hover {
+    border-color: var(--primary-color);
+}
+
+.footer__icon {
+    font-size: 2rem;
+}
+
+.footer__socials {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__copy {
+    font-size: 1rem;
+}
