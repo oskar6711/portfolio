@@ -8,19 +8,22 @@ import {BsInstagram} from 'react-icons/bs'
 import Particles from './Particles'
 import CV from '../../assets/cv.pdf'
 import AnimatedLetters from './AnimatedLetters'
-import './AnimatedLetters.css'
+import Tilt from 'react-parallax-tilt'
 
 const Header = () => {
   return (
     <section>
       <Particles></Particles>
+      <Tilt scale={1} glareEnable={false}>
       <header className='container header__container'>
         <div className='header__header'>
           {/* <h5 className='text1'>Hi,</h5>
           <h1 className='text2'>I'm <span className='red'>Oskar</span></h1>
           <h5 className='text3'>Full<span className='red'>stack</span> Developer</h5> */}
+          
           <AnimatedLetters />
           <div className='line'></div>
+      
         </div>
         <div className='header__socials'>
           <a target='_blank' rel='noreferrer' href='https://github.com/oskar6711'><VscGithub/></a>
@@ -35,6 +38,7 @@ const Header = () => {
           <a href='#about'>Scroll Down<br/><RiArrowDownSLine className='header__scroll-icon' /></a>
         </div>
       </header>
+      </Tilt>
     </section>
   )
 }

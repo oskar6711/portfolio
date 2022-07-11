@@ -8,6 +8,7 @@ import {AiOutlineConsoleSql} from 'react-icons/ai'
 import {FaLinux} from 'react-icons/fa'
 import {FaJava} from 'react-icons/fa'
 import './skills.css'
+import Tilt from 'react-parallax-tilt'
 
 const data = [
   {
@@ -69,6 +70,7 @@ const Skills = () => {
             data.map(({id, image, name, level}) => {
               return (
                 <article key={id} className='skill'>
+                <Tilt>
                   <div className='skill-icon'>
                     {image}
                   </div>
@@ -76,6 +78,7 @@ const Skills = () => {
                     <h4>{name}</h4>
                     <small>{level}</small>
                   </div>
+                </Tilt>
                 </article>
               )
             })
