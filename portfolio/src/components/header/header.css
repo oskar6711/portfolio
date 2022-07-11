@@ -5,8 +5,65 @@ header {
 .header__container {
     margin-top: 10rem;
     display: block;
-    font-size: 5rem;
+    animation: backInDown 1s;
+    text-align: center;
 }
+
+.header__header {
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.103);
+}
+
+.header__text-hi {
+    opacity: 0;
+    animation: fadeInDown 1s 1s;
+    animation-fill-mode: forwards;
+}
+
+.header__text-name {
+    opacity: 0;
+    animation: fadeInDown 1s 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.header__text-job {
+    opacity: 0;
+    animation: fadeInDown 1s 2s;
+    animation-fill-mode: forwards;
+}
+.hi {
+    font-size: 3rem;
+}
+
+.hi:hover {
+    color: var(--primary-color);
+}
+
+.name {
+    font-size: 7rem;
+    color: var(--primary-color);
+}
+.name:hover {
+    color: var(--secondary-color);
+}
+
+.job {
+    font-size: 3rem;
+}
+
+.job:hover {
+    color: var(--primary-color);
+}
+
+.header__letter {
+    font-weight: 600;
+    display: inline-block;
+}
+
+.header__letter:hover {
+    animation: rubberBand 1s;
+}
+
 
 .header__scroll {
     margin-top: 10rem;
@@ -16,6 +73,9 @@ header {
     align-items: center;
     text-align: center;
     font-size: 0.8rem;
+    opacity: 0;
+    animation: fadeInUp 1s 2.5s;
+    animation-fill-mode: forwards;
 }
 
 .header__scroll-icon {
@@ -25,7 +85,11 @@ header {
 .header__socials {
     margin-top: 1rem;
     display: flex;
+    justify-content: center;
     gap: 0.8rem;
+    opacity: 0;
+    animation: fadeInDown 1s 2.5s;
+    animation-fill-mode: forwards;
 }
 
 .header__socials a {
@@ -34,6 +98,9 @@ header {
 
 .CTA {
     font-size: 0.9rem;
+    opacity: 0;
+    animation: fadeInDown 1s 2.5s;
+    animation-fill-mode: forwards;
 }
 
 @media screen and (max-width: 1024px) {
@@ -57,5 +124,19 @@ header {
         margin-top: 8rem;
         font-size: 3rem;
     }
+    .hi {
+        font-size: 3rem;
+    }
+    
+    .name {
+        font-size: 5rem;
+        color: var(--primary-color);
+    }
+    
+    .job {
+        font-size: 2rem;
+    }
+    
+
 
 }

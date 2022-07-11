@@ -47,7 +47,7 @@ const data = [
 const Projects = () => {
   return (
     <section id='projects'>
-      <h2>My Proj<span class='red'>ects</span></h2>
+      <h2>My Proj<span className='red'>ects</span></h2>
       <div className='swiper__container'>
       <Swiper 
         className='container projects__container' 

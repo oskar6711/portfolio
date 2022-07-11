@@ -3,6 +3,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     width: 45%;
+    border: 15px solid rgba(0, 0, 0, 0.144);
+    background-color: rgba(0, 0, 0, 0.144);
+    backdrop-filter: blur(15px);
+    border-radius: 7rem;
 }
 
 .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.container.projects__container.swiper-backface-hidden {
@@ -27,7 +31,6 @@
     align-items: center;
     text-align: center;
     user-select: none;
-
 }
 
 .project-image__container {

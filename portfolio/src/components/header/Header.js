@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import './header.css'
 import {RiArrowDownSLine} from 'react-icons/ri'
 import {VscGithub} from 'react-icons/vsc'
@@ -8,18 +7,19 @@ import {GrFacebook} from 'react-icons/gr'
 import {BsInstagram} from 'react-icons/bs'
 import Particles from './Particles'
 import CV from '../../assets/cv.pdf'
+import AnimatedLetters from './AnimatedLetters'
+import './AnimatedLetters.css'
 
 const Header = () => {
-  
-
   return (
     <section>
       <Particles></Particles>
       <header className='container header__container'>
         <div className='header__header'>
-          <h5 className='text1'>Hi,</h5>
+          {/* <h5 className='text1'>Hi,</h5>
           <h1 className='text2'>I'm <span className='red'>Oskar</span></h1>
-          <h5 className='text3'>Full<span className='red'>stack</span> Developer</h5>
+          <h5 className='text3'>Full<span className='red'>stack</span> Developer</h5> */}
+          <AnimatedLetters />
           <div className='line'></div>
         </div>
         <div className='header__socials'>
