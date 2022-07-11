@@ -25,8 +25,8 @@ const Header = () => {
         <div className='header__socials'>
           <a target='_blank' rel='noreferrer' href='https://github.com/oskar6711'><VscGithub/></a>
           <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/oskar-szymczyk-1a5024235/'><BsLinkedin/></a>
-          <a target='_blank' rel='noreferrer' href='https://www.facebook.com/'><GrFacebook/></a>
-          <a target='_blank' rel='noreferrer' href='https://www.instagram.com/'><BsInstagram/></a>
+          <a target='_blank' rel='noreferrer' href='https://www.facebook.com/oskar.szymczyk.58/'><GrFacebook/></a>
+          <a target='_blank' rel='noreferrer' href='https://www.instagram.com/oskar_szymczyk/'><BsInstagram/></a>
         </div>
         <div className='CTA'>
           <a href={CV} download className='btn btn__red '>Download CV</a>
